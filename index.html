@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Wellness Research</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<!-- Proteção Anti-Iframe -->
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+<!-- Preload da imagem LCP -->
+<link rel="preload" as="image" href="images/imagemblack.gif" fetchpriority="high">
+
+<!-- Preload das fontes locais críticas -->
+<link rel="preload" as="font" href="fonts/kJXt72Gt1LyFMZcEKAAvlKCWcynf_cDxXwCLxiixG1c.woff" crossorigin>
+<link rel="preload" as="font" href="fonts/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff" crossorigin>
+
+<style>
+/* === @font-face — fontes locais (sem CDN) === */
+@font-face{font-family:'Cabin';font-style:normal;font-weight:400;font-display:swap;src:local('Cabin'),local('Cabin-Regular'),url(fonts/kJXt72Gt1LyFMZcEKAAvlKCWcynf_cDxXwCLxiixG1c.woff) format('woff')}
+@font-face{font-family:'Cabin';font-style:normal;font-weight:600;font-display:swap;src:local('Cabin SemiBold'),local('Cabin-SemiBold'),url(fonts/bSicyj3YibVhVPhGZyWVI3YhjbSpvc47ee6xR_80Hnw.woff) format('woff')}
+@font-face{font-family:'Cabin';font-style:normal;font-weight:700;font-display:swap;src:local('Cabin Bold'),local('Cabin-Bold'),url(fonts/haOjnueK8Or1ztuuRtr8dnYhjbSpvc47ee6xR_80Hnw.woff) format('woff')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:local('Lato Regular'),local('Lato-Regular'),url(fonts/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:local('Lato Bold'),local('Lato-Bold'),url(fonts/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff')}
+@font-face{font-family:'Avenir-Book';src:url(fonts/AvenirLTStd-Book.otf) format('opentype');font-display:swap}
+
+/* === Reset / base === */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+body{margin:0;padding:7px;background-color:#f3f3f3;font-family:Arial,Helvetica,sans-serif}
+img{max-width:100%;height:auto;border:0}
+
+/* === Layout === */
+header,.content{background:#fff;border:1px solid #e8e8e8;box-shadow:0 2px 4px 0 #bdbdbd;width:100%;max-width:800px;padding:10px;margin:0 auto 10px auto;position:relative}
+.content{padding:35px 25px;font-family:'Cabin',sans-serif;font-size:18px;color:#606060;margin-bottom:20px}
+footer{width:100%;max-width:800px;margin:0 auto 10px auto;padding:20px 10px 0 10px;font-family:'Avenir-Book';font-size:12px;color:#626262;text-align:center}
+footer span{font-family:'Avenir-Book';font-size:13px;color:#afafaf}
+footer span a{color:#afafaf;text-decoration:none}
+footer span a:hover{text-decoration:underline}
+
+/* === Tipografia === */
+h1{text-align:center;font-family:'Lato',sans-serif;font-size:43px;font-weight:700;color:#131313;margin:0 0 20px 0;padding:0}
+h2{font-family:'Lato',sans-serif;font-size:28px;color:#121212;margin:0 0 20px 0;padding:0}
+.clearfix:after{display:table;content:'';clear:both}
+
+/* === Header === */
+.thumb{float:left;width:50px;height:50px;margin-right:10px;border-radius:50%;object-fit:cover}
+.name{font-family:'Cabin',sans-serif;font-size:17px;color:#1f599d;display:block;text-decoration:none;margin-bottom:5px}
+.stat{font-family:'Cabin',sans-serif;font-size:13px;color:#818181;display:inline-block;padding-right:15px}
+.stat svg{vertical-align:middle;margin-right:3px}
+.advertorial{position:absolute;top:0;right:25px;text-align:right;font-size:19px;color:#9b9b9b}
+.advertorial img{display:inline-block}
+
+/* === Conteúdo === */
+.main{display:block;width:100%;margin-bottom:30px;height:auto;aspect-ratio:16/9}
+.button{background:#019cfe;box-shadow:0 2px 4px 0 rgba(0,0,0,.5);font-family:'Cabin',sans-serif;font-weight:600;font-size:28px;color:#fff;padding:18px 70px;display:table;margin:0 auto 20px auto;text-decoration:none}
+.button:hover{background:#0184d5}
+.watch-now-btn{text-align:center;margin:20px 0}
+
+/* === Anúncio / Footer === */
+#adver p{text-align:center;margin:0;padding:0 0 15px 0;font-size:12px;color:#818181}
+#fda{font-size:12px}
+#fda a{color:#4a4a4a}
+.m-show{display:none}
+
+/* === Mobile === */
+@media screen and (max-width:500px){
+  body{padding:0}
+  .m-show{display:block}
+  .m-hide{display:none}
+  .advertorial{right:10px}
+  .name{display:inline-block;margin-right:5px}
+  h1{font-size:20px}
+  h2{font-size:16px;margin-bottom:10px}
+  .main{margin-bottom:10px}
+  .content{font-size:14px;padding:20px 15px}
+  footer{font-size:12px}
+  .button{padding:10px 45px;font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div id="adver"><p></p></div>
+
+<header class="clearfix">
+  <div>
+    <img class="thumb" src="images/dra2.png" width="50" height="50" alt="Author avatar" decoding="async">
+    <a class="name offlink" href="https://lp03.greatlife.life/?afid=2899">Wellness Research</a>
+  </div>
+  <div>
+    <span class="stat1 stat first">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>
+      <span id="date">7 hours ago</span>
+    </span>
+    <span class="stat2 stat">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="13" fill="currentColor" aria-hidden="true"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+      28,161 views
+    </span>
+  </div>
+  <div class="advertorial">
+    <img src="images/adv.png" width="15" height="20" alt="Advertorial" decoding="async">
+    <br>
+    <span class="m-show"></span>
+    <span class="m-hide"></span>
+  </div>
+</header>
+
+<div class="content">
+  <h1>
+    <a class="name offlink" href="https://lp03.greatlife.life/?afid=2899"
+       style="font-size:42px;line-height:1.2;text-decoration:none">
+      <span style="color:red">The Real Pink Gelatin Trick</span><br>
+      That Was Censored After Melting 35lbs of Fat in 3 Weeks
+    </a>
+  </h1>
+
+  <a href="https://lp03.greatlife.life/?afid=2899">
+    <img class="main" alt="Watch the video now" src="images/imagemblack.gif"
+         width="384" height="216" fetchpriority="high" decoding="async">
+  </a>
+
+  <div class="watch-now-btn">
+    <a class="button offlink" href="https://lp03.greatlife.life/?afid=2899">Watch Now</a>
+  </div>
+
+  <p>A natural recipe with Pink Gelatin and Ice is being censored due to claims that it activates an automatic fat-burning mode in the body 24 hours a day and can outperform any weight loss pen by up to 94.2%.</p>
+
+  <p><strong>Exposed in by Dr. Oz., this method is so effective that they never admit it because they sign billion-dollar confidentiality contracts with the manufacturers of Mounjaro and Ozempic.</strong></p>
+
+  <p>Unlike extreme diets and expensive medications, this natural solution targets the real cause of fat accumulation in the body, according to recent studies…</p>
+
+  <p><strong>Be warned: this discovery is so effective that it allows you to shed pounds of fat in just a few days and awaken your best version.</strong></p>
+
+  <p>⚠️ WARNING: This video might be taken down at any moment due to its sensitive content. Watch it now before it's removed again. This might be your only chance!</p>
+
+  <p><b>Spots Available to Watch the Video: 3 Remaining</b></p>
+
+  <a class="button offlink" href="https://lp03.greatlife.life/?afid=2899">Watch Now</a>
+</div>
+
+<footer>
+  <p id="footer-legal"></p>
+  <div id="fda">
+    <p>Representations regarding the efficacy and safety of this product have not been evaluated by the Food and Drug Administration. The FDA only evaluates foods and drugs, not supplements like these products. These products are not intended to diagnose, prevent, treat, or cure any disease. Click <a href="references.html" target="_blank">here</a> to find evidence of a test, analysis, research, or study describing the benefits, performance or efficacy of this product based on the expertise of relevant professionals.</p>
+  </div>
+</footer>
+
+<!-- Anti-Cookie Stuffing + Rastreamento de Afiliado -->
+<script>
+(function(){
+  'use strict';
+
+  /* === Rastreamento de afiliado === */
+  var params = new URLSearchParams(window.location.search);
+  var afid = params.get('afid') || params.get('aff_id') || '2899';
+
+  // Salva afid no cookie por 400 dias
+  var exp = new Date();
+  exp.setDate(exp.getDate() + 400);
+  document.cookie = 'affiliate_id=' + afid + '; expires=' + exp.toUTCString() + '; path=/; SameSite=Lax; Secure';
+
+  // Injeta afid dinâmico nos links de CTA (se afid veio por URL param)
+  if (afid !== '2899') {
+    document.querySelectorAll('a.offlink, a.button').forEach(function(link) {
+      try {
+        var url = new URL(link.href);
+        url.searchParams.set('afid', afid);
+        link.href = url.toString();
+      } catch(e) {}
+    });
+  }
+
+  /* === Anti-Cookie Stuffing === */
+  var config = {affiliateParam:'afid', cookieName:'affiliate_id', cookieDuration:400, priority:'last-click'};
+
+  function getExistingCookie() {
+    var c = document.cookie.split(';');
+    for (var i = 0; i < c.length; i++) {
+      var p = c[i].trim().split('=');
+      if (p[0] === config.cookieName) return p[1];
+    }
+    return null;
+  }
+
+  function clearSuspiciousCookies() {
+    var c = document.cookie.split(';');
+    var k = ['aff','ref','partner','afiliado','parceiro','afid'];
+    c.forEach(function(cookie) {
+      var n = cookie.trim().split('=')[0];
+      var s = k.some(function(kw){ return n.toLowerCase().indexOf(kw) !== -1; });
+      if (n !== config.cookieName && s) {
+        document.cookie = n + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      }
+    });
+  }
+
+  var checkoutDomains = ['buygoods.com','mycartpanda.com','digistore24.com','clickbank.com','leanzene.com'];
+
+  function sanitizeLinks() {
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (link && link.href) {
+        try {
+          var url = new URL(link.href);
+          var isCheckout = checkoutDomains.some(function(d){ return url.hostname.indexOf(d) !== -1; });
+          if (isCheckout) return;
+          var sp = ['aff_id','affiliate','partner_id','afiliado_id'];
+          var mod = false;
+          sp.forEach(function(param) {
+            if (url.searchParams.has(param) && url.searchParams.get(param) !== getExistingCookie()) {
+              url.searchParams.delete(param);
+              mod = true;
+            }
+          });
+          if (mod) link.href = url.toString();
+        } catch(err) {}
+      }
+    });
+  }
+
+  function monitorCookieChanges() {
+    var last = document.cookie;
+    setInterval(function() {
+      if (document.cookie !== last) {
+        clearSuspiciousCookies();
+        last = document.cookie;
+      }
+    }, 2000);
+  }
+
+  clearSuspiciousCookies();
+  sanitizeLinks();
+  monitorCookieChanges();
+})();
+</script>
+
+</body>
+</html>
